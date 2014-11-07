@@ -29,8 +29,9 @@ namespace _2K.Controllers
             });
             postListViewModel.GridData = postsView;
             postListViewModel.TotalCount = postsView.Count();
+            var itemsList = await postListViewModel.GridData.ToListAsync();
             //return View(postsView.ToPagedList(pageNumber, itemsPerPage));
-            return View(await postListViewModel.GridData.ToListAsync());
+            return View(itemsList.ToPagedList(pageNumber: page ?? 1,pageSize: 10));
         }
 
         // GET: Post/Details/5
