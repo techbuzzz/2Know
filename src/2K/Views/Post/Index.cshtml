@@ -25,9 +25,13 @@
         </td>
     </tr>
 }*@
-@foreach (var example in Model)
+@foreach (var post in Model)
 {
-    <p>@example.Title: @example.CommentCount</p>
+    @*<p>@example.Title: @example.CommentCount</p>*@
+    <h2>@Html.ActionLink(post.Title, "Details", new {id = @post.ItemId})</h2>
+    @:<article>
+    <p>@post.CommentCount</p>
+    @:</article>
 }
 
 @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))

@@ -23,7 +23,7 @@ namespace _2K.Controllers
             {
                 CommentCount = p.Comments.Count,
                 CreatedBy = "SMT",
-                ItemId = p.TopicId,
+                ItemId = p.ItemId,
                 Title = p.Title,
                 Votes = 100
             });
