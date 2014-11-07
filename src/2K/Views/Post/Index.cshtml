@@ -1,0 +1,25 @@
+﻿@model IEnumerable<K2.Core.ViewModel.Post.PostListViewModel.PostListItemViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommentCount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ItemId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ItemId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ItemId })
+        </td>
+    </tr>
+}

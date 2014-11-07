@@ -100,6 +100,9 @@
       <DependentUpon>2KLabels.resx</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\BaseView.cs" />
+    <Compile Include="ViewModel\Post\PostDetailsViewModel.cs" />
+    <Compile Include="ViewModel\Post\PostEditViewModel.cs" />
+    <Compile Include="ViewModel\Post\PostListViewModel.cs" />
     <Compile Include="ViewModel\Post\PostNewViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
