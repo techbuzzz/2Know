@@ -1,11 +1,9 @@
-namespace K2.Core.Migrations
-{
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+using System.Data.Entity.Migrations;
+using _2K.Core.Context;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<_2K.Core.Context.DatabaseContext>
+namespace _2K.Core.Migrations
+{
+    internal sealed class Configuration : DbMigrationsConfiguration<DatabaseContext>
     {
         public Configuration()
         {
@@ -14,7 +12,7 @@ namespace K2.Core.Migrations
 
         }
 
-        protected override void Seed(_2K.Core.Context.DatabaseContext context)
+        protected override void Seed(DatabaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 

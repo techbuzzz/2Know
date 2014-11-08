@@ -7,7 +7,7 @@
     <ProjectGuid>{CB0C9E97-52B2-4058-AF69-695538E7465D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>K2.Core</RootNamespace>
+    <RootNamespace>_2K.Core</RootNamespace>
     <AssemblyName>K2.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -85,7 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DatabaseContext.cs" />
-    <Compile Include="Context\IRepository.cs" />
     <Compile Include="Entity\Base\BaseFile.cs" />
     <Compile Include="Entity\Base\BaseItem.cs" />
     <Compile Include="Entity\PostComment.cs" />
@@ -110,6 +109,10 @@
     <Compile Include="ViewModel\Post\PostEditViewModel.cs" />
     <Compile Include="ViewModel\Post\PostListViewModel.cs" />
     <Compile Include="ViewModel\Post\PostNewViewModel.cs" />
+    <Compile Include="ViewModel\Topic\PostEditViewModel.cs" />
+    <Compile Include="ViewModel\Topic\TopicListViewModel.cs" />
+    <Compile Include="ViewModel\Topic\TopicNewViewModel.cs" />
+    <Compile Include="ViewModel\Topic\TopicDetailsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

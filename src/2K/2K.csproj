@@ -325,9 +325,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\K2.Core\K2.Core.csproj">
+    <ProjectReference Include="..\K2.Core\2K.Core.csproj">
       <Project>{cb0c9e97-52b2-4058-af69-695538e7465d}</Project>
-      <Name>K2.Core</Name>
+      <Name>2K.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BB746A
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K2.Core", "K2.Core\K2.Core.csproj", "{CB0C9E97-52B2-4058-AF69-695538E7465D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2K.Core", "K2.Core\2K.Core.csproj", "{CB0C9E97-52B2-4058-AF69-695538E7465D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2K.Common", "2K.Common\2K.Common.csproj", "{2443DF0D-DBC0-4EFC-8E70-0A8E65DEF2F5}"
 EndProject

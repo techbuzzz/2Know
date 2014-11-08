@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Mvc;
-using K2.Core.Entity;
-using K2.Core.Resources;
 using _2K.Core.Entity.Base;
+using _2K.Core.Resources;
 
 namespace _2K.Core.Entity
 {

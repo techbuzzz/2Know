@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
-namespace K2.Core.ViewModel.Post
+namespace _2K.Core.ViewModel.Post
 {
     public class PostListViewModel
     {

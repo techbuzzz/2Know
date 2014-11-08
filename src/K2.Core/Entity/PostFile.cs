@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
-using System.Web.WebPages;
-using K2.Core.Entity.Base;
-using _2K.Core.Entity;
+using _2K.Core.Entity.Base;
 
-namespace K2.Core.Entity
+namespace _2K.Core.Entity
 {
     public class PostFile: BaseFile
     {

@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
-using K2.Core.Resources;
-using _2K.Core.Entity;
 using _2K.Core.Entity.Base;
+using _2K.Core.Resources;
 
-namespace K2.Core.Entity
+namespace _2K.Core.Entity
 {
     public class PostComment:BaseItem
     {

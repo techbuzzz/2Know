@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web.Http;
 using System.Web.Http.OData.Builder;
 using System.Web.Http.OData.Extensions;
-using K2.Core.Entity;
 using _2K.Core.Entity;
 
 namespace _2K

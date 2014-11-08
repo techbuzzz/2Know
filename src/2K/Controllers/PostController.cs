@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using K2.Core.ViewModel.Post;
 using PagedList;
 using _2K.Core.Entity;
+using _2K.Core.ViewModel.Post;
 
 namespace _2K.Controllers
 {
