@@ -1,4 +1,6 @@
-﻿body {
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -21,4 +23,47 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.top-nav-collapse {
+    padding: 7px 0;
+    background: #fff;
+    box-shadow: 0 0 3px #b5b5b5;
+}
+
+.navbar-brand {
+    font-size: 31px;
+    font-weight: 200;
+    line-height: 15px;
+    color: #777 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+    .navbar-brand span {
+        color: #72c02c !important;
+    }
+
+.navbar {
+    padding: 12px 0;
+    -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    transition: background .3s ease-in-out,padding .3s ease-in-out;
+}
+
+.navbar-default {
+    border-color: #e7e7e7;
+}
+
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
