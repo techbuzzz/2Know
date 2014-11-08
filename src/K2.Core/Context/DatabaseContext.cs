@@ -32,6 +32,10 @@ namespace _2K.Core.Context
             {
                 entity.Entity.UpdatedOn = DateTime.Now;
             }
+            foreach (var entity in ChangeTracker.Entries<BaseItem>().Where(e => e.State == EntityState.Added))
+            {
+                entity.Entity.CreatedOn = entity.Entity.UpdatedOn = DateTime.Now;
+            }
             try
             {
                 return await base.SaveChangesAsync();

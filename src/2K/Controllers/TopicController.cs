@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace _2K.Controllers
 {
-    public class TopicController : Controller
+    public class TopicController : BaseController
     {
         // GET: Topic
         public ActionResult Index()
@@ -28,6 +28,7 @@ namespace _2K.Controllers
 
         // POST: Topic/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(FormCollection collection)
         {
             try

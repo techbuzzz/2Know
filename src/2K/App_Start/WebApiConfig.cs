@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.OData.Builder;
+using System.Web.Http.OData.Extensions;
+using K2.Core.Entity;
+using _2K.Core.Entity;
 
 namespace _2K
 {
@@ -21,6 +25,14 @@ namespace _2K
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+            builder.EntitySet<Post>("Posts");
+            builder.EntitySet<PostComment>("Comments");
+            builder.EntitySet<PostFile>("PostFiles");
+            builder.EntitySet<Tag>("Tags");
+            builder.EntitySet<Topic>("Topics"); 
+            config.Routes.MapODataServiceRoute("odata", "odata", builder.GetEdmModel());
         }
     }
 }
