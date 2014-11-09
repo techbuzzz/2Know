@@ -1,0 +1,49 @@
+﻿@model _2K.Core.ViewModel.Topic.TopicDetailsViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Topic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+        <dt>
+            Post count
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Posts.Count)
+        </dd>
+    </dl>
+</div>
+@foreach (var post in Model.Posts)
+{
+    <h4>@post.Title</h4>
+    <article>
+        <p>
+            
+        </p>
+</article>
+}
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

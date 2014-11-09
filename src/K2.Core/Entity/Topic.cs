@@ -19,7 +19,6 @@ namespace _2K.Core.Entity
         [Column(TypeName = "ntext")]
         public string Content { get; set; }
 
-
         public virtual ICollection<Post> Posts { get; set; }
     }
 }

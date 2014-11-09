@@ -318,11 +318,14 @@
     <Content Include="Views\TopicsEF\Details.cshtml" />
     <Content Include="Views\TopicsEF\Edit.cshtml" />
     <Content Include="Views\TopicsEF\Index.cshtml" />
+    <Content Include="Views\Topic\Create.cshtml" />
+    <Content Include="Views\Post\Create.cshtml" />
+    <Content Include="Views\Topic\Index.cshtml" />
+    <Content Include="Views\Topic\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="2KContent\files\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Topic\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

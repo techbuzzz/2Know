@@ -1,4 +1,6 @@
-﻿namespace _2K.Core.ViewModel.Post
+﻿using System.Collections.Generic;
+
+namespace _2K.Core.ViewModel.Post
 {
     public class PostNewViewModel
     {
@@ -8,6 +10,8 @@
         public string Content { get; set; }
 
         public int TopicId { get; set; }
-        //public Topic CurrentTopic { get; set; }
+        public Entity.Topic Topic { get; set; }
+        public List<Entity.Topic> Topics { get; set; }
+
     }
 }

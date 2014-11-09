@@ -41,18 +41,30 @@ namespace _2K.Controllers
         }
 
         // GET: Post/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            return View();
+            return View(new PostNewViewModel()
+            {
+                Topics = await Db.Topics.ToListAsync()
+            });
         }
 
         // POST: Post/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public async Task<ActionResult> Create(PostNewViewModel vm)
         {
             try
             {
-                // TODO: Add insert logic here
+                //var currentTopic = await Db.Topics.FirstOrDefaultAsync(t => t.ItemId == vm.TopicId);
+                var post = new Post()
+                {
+                    Title = vm.Title,
+                    Content = vm.Content,
+                    TopicId = vm.TopicId
+                };
+                Db.Posts.Add(post);
+                
+                await Db.SaveChangesAsync();
 
                 return RedirectToAction("Index");
             }

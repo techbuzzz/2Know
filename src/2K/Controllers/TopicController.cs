@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using _2K.Core.Entity;
+using _2K.Core.ViewModel.Topic;
 
 namespace _2K.Controllers
 {
@@ -15,21 +19,26 @@ namespace _2K.Controllers
         }
 
         // GET: Topic/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            return View();
+            var allPosts = await Db.Posts.Where(p => p.TopicId == id).ToListAsync();
+            var vm = new TopicDetailsViewModel(allPosts);
+            Topic topic = await Db.Topics.FindAsync(id);
+            vm.Title = topic.Title;
+            vm.Content = topic.Content;
+            return View(vm);
         }
 
         // GET: Topic/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new TopicNewViewModel());
         }
 
         // POST: Topic/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(TopicNewViewModel vm)
         {
             try
             {

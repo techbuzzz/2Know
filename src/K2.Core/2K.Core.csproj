@@ -109,7 +109,7 @@
     <Compile Include="ViewModel\Post\PostEditViewModel.cs" />
     <Compile Include="ViewModel\Post\PostListViewModel.cs" />
     <Compile Include="ViewModel\Post\PostNewViewModel.cs" />
-    <Compile Include="ViewModel\Topic\PostEditViewModel.cs" />
+    <Compile Include="ViewModel\Topic\TopicViewModel.cs" />
     <Compile Include="ViewModel\Topic\TopicListViewModel.cs" />
     <Compile Include="ViewModel\Topic\TopicNewViewModel.cs" />
     <Compile Include="ViewModel\Topic\TopicDetailsViewModel.cs" />
