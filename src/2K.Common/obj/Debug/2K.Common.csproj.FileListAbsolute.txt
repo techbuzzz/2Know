@@ -1,0 +1,5 @@
+C:\Users\vbuzin\documents\visual studio 2013\Projects\2K\2K.Common\bin\Debug\2K.Common.dll
+C:\Users\vbuzin\documents\visual studio 2013\Projects\2K\2K.Common\bin\Debug\2K.Common.pdb
+C:\Users\vbuzin\documents\visual studio 2013\Projects\2K\2K.Common\obj\Debug\2K.Common.csprojResolveAssemblyReference.cache
+C:\Users\vbuzin\documents\visual studio 2013\Projects\2K\2K.Common\obj\Debug\2K.Common.dll
+C:\Users\vbuzin\documents\visual studio 2013\Projects\2K\2K.Common\obj\Debug\2K.Common.pdb
